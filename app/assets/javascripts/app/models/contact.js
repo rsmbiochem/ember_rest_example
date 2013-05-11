@@ -1,7 +1,7 @@
 App.Contact = Ember.Resource.extend({
   resourceUrl:        '/contacts',
   resourceName:       'contact',
-  resourceProperties: ['first_name', 'last_name'],
+  resourceProperties: ['first_name', 'last_name', 'favorite_color', 'pet_name'],
 
   validate: function() {
     if (this.get('first_name') === undefined || this.get('first_name') === '' ||

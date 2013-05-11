@@ -1,8 +1,10 @@
+
 {{#with contact}}
-  {{view Ember.TextField valueBinding="first_name" placeholder="First name"}}
-  {{view Ember.TextField valueBinding="last_name"  placeholder="Last name"}}
-  <button type="submit">
-    {{#if id}}Update{{else}}Create{{/if}}
-  </button>
+ {{view Ember.TextField valueBinding="first_name" placeholder="First name"}}
+ {{view Ember.TextField valueBinding="last_name"  placeholder="Last name"}}
+<td class="data">  {{view Ember.TextField valueBinding="favorite_color" placeholder="Favorite Color"}}</td>
+<td class="data">  {{view Ember.TextField valueBinding="pet_name" placeholder="Pet Name"}}<td>
+<a href="#" {{action "submit"}}>  {{#if id}}Update{{else}}Create{{/if}}</a> |
 {{/with}}
 <a href="#" {{action "cancelForm"}}>Cancel</a>
+
